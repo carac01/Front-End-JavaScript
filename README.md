@@ -1,7 +1,7 @@
 ## Front-End-JavaScript
 
-The original course you could find but the [link](https://programadorwebvalencia.com/cursos/javascript/introducci%C3%B3n/). <br>
-Author of the course Andros Fenollosa Hurtado. <br>
+The original course you could find by the [link](https://programadorwebvalencia.com/cursos/javascript/introducci%C3%B3n/). <br>
+Author of the course is [Andros Fenollosa Hurtado](https://soy.andros.dev/). <br>
 
 ### Content
 
