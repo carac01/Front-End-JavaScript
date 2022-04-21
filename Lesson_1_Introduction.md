@@ -45,7 +45,7 @@ Where should be tag in HTML?
 
 #### Option 1. Naughty
 
-Inside _<head>_ part - the page will not load until script is not completed:
+Inside _head_ part - the page will not load until script is not completed:
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ Inside _<head>_ part - the page will not load until script is not completed:
 
 #### Option 2: Classic
 
-At the end of the _<body>_ part:
+At the end of the _body_ part:
 
 ```html
 <!DOCTYPE html>
