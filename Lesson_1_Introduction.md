@@ -11,16 +11,16 @@ They give **the possibility to make the pages dynamic**, dependant for changes f
 
 
 We have 2 types:
-* **Frontend, logic from the browser side**. Usually it is used JavaScript.
+* **Frontend, logic from the browser side**. Usually, for a frontend is used JavaScript.
 * **Backend**, the pages are **created(painted) with a server**. You could learn more about this topic in [PHP course](https://programadorwebvalencia.com/cursos/php/base/). <br>
 
 **JavaScript** (abbreviation as JS) is a **high level programming language** which was created in 1995 
 (it's syntax's is nearer to human then to machine), 
-**multi paradigm** (admit varies organization types) and **executed during the compilation**
+**multi paradigm** (admit varies organization types) and is **executed during the compilation**
 (there is no previous step of the code compilation into the binary).
 All these make your studying and developing easier. <br>
 
-The **goal of this course** is to learn you the essential tasks 
+The **goal of this course** is to teach you the essential tasks 
 which every professional frontend programmer has to know:
 
 * Manipulation with HTML(DOM).
@@ -40,12 +40,14 @@ You don't arrange nothing new at the moment if you are able to realise WebDesign
 
 #### Where do I put my JS code?
 
-It should be inside the <script> tag, but here is the question...
-Where should be tag in HTML?
+It should be inside the _<script>_ tag, but here is the question...
+Where should be <script> tag in HTML?
 
-#### Option 1. Naughty
+#### Option 1: Risky
 
-Inside _head_ part - the page will not load until script is not completed:
+Put <script> tag inside _head_ HTML(DOM) part - the page will be loaded when the script is completed.<br>
+It is risky because in case there are much information on the website and in <script>, 
+it will take much time for user/visitor to wait the information from your web. 
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +67,8 @@ Inside _head_ part - the page will not load until script is not completed:
 
 #### Option 2: Classic
 
-At the end of the _body_ part:
+Locate the <script> tag at the end of the _body_ HTML(DOM) part: 
+the visitor of the web will not wait till the script is completed.
 
 ```html
 <!DOCTYPE html>
@@ -87,7 +90,8 @@ At the end of the _body_ part:
 
 #### Option 3: Nice
 
-Waiting till everything will be load to execute the script:
+Waiting till the web page content will be loaded to execute the script - 
+for these purposes also could be applicable [_window.onload_](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload):
 
 ```html
 <!DOCTYPE html>
@@ -109,7 +113,7 @@ Waiting till everything will be load to execute the script:
 
 #### Option 4: Modern 
 
-With a _[defer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer)_ 👍 attribute which contains the external file.
+With a _[defer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer)_ 👍 attribute which contains the external script file:
 
 ```html
 <!DOCTYPE html>
@@ -128,7 +132,7 @@ With a _[defer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 ### Comments
 
 The comments will be ignored by the language, that's why do not put by them.
-The more your code will be documented, the easier it will be modified and increased.
+The more your code is documented, the easier it will be to modify and increase the code.
 
 #### The line
 
