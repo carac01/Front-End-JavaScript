@@ -46,7 +46,7 @@ Where should be <script> tag in HTML?
 #### Option 1: Risky
 
 Put <script> tag inside _head_ HTML(DOM) part - the page will be loaded when the script is completed.<br>
-It is risky because in case there are much information on the website and in <script>, 
+It is risky because in case there is much information on the website and in <script>, 
 it will take much time for user/visitor to wait the information from your web. 
 
 ```html
