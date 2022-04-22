@@ -35,7 +35,7 @@ Are you ready that the users are being the main characters?
 
 You don't arrange nothing new at the moment if you are able to realise WebDesign: 
 
-* Full text editor o IDE, [anything from the list](https://programadorwebvalencia.com/mejores-editores-en-dise%C3%B1o-web/) will be enough. 
+* Full text editor or IDE, [anything from the list](https://programadorwebvalencia.com/mejores-editores-en-dise%C3%B1o-web/) will be enough. 
 * Web Browser.
 
 #### Where do I put my JS code?
