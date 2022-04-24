@@ -6,7 +6,7 @@ Author of the course is [Andros Fenollosa Hurtado](https://soy.andros.dev/). <br
 ### Content
 
  1. [Introduction](Lesson_1_Introduction.md)
- 2. Variables
+ 2. [Variables](Lesson_2_Variables.md)
  3. Conditions
  4. Functions
  5. Events
