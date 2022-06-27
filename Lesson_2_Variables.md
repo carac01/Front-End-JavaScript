@@ -181,3 +181,117 @@ const result = (2 * 0.5) + (100 / 10);
 console.log(result);
 // 11
 ```
+
+#### Increments and decrements
+
+If you want to increase or reduce some numbers, you could use the next strategy:
+
+```html
+let number = 1;
+number += 1;
+// 2
+```
+
+It is the same as do:
+
+```html
+let number = 1;
+number = number + 1;
+// 2
+```
+
+The most usable is shortcut with ++ 0 --. I advance you that the variable will not be the constant:
+
+```html
+let number = 1;
+number++;
+// 2
+
+let secondNumber = 1;
+secondNumber--;
+// 0
+```
+
+The value is increased and decreased on 1.
+
+Though you have to know that it is possible to use it as prefix and suffix for different outputs/returns:
+
+```html
+// Increments with suffix:
+let number = 5;
+console.log(number++);
+// 6
+console.log(number);
+// 5
+
+// Increments with prefix:
+let number = 5;
+console.log(++number);
+// 6
+console.log(number);
+// 6
+```
+
+The difference is:
+_number++_ returns the not modification value, before;
+_++number_ returns the modified value.
+
+Also, it is applicable for -- mode.
+
+### Manipulations
+
+#### Concatenations 
+
+To join the strings we have different options:
+
+* with the '+' symbol:
+
+```html
+const name = 'Tatra';
+const belonging = ' Hunnen';
+const complete = name + belonging;
+// Tatra Hunnen
+```
+
+With the tagged templates:
+
+```html
+const place = 'The Alhambra';
+const definition = '$place was a palatine city, General Captaincy of the Kingdom of Granada in 1870.';
+console.log(definition);
+// The Alhambra was a palatine city, General Captaincy of the Kingdom of Granada in 1870.
+```
+
+Or with the _concat()_ function:
+
+```html
+const place = 'The Alhambra ';
+const definition = 'was a palatine city, General Captaincy of the Kingdom of Granada in ';
+const year = 1870;
+const text = ''.concat(place, definition, year);
+console.log(text);
+// The Alhambra was a palatine city, General Captaincy of the Kingdom of Granada in 1870.
+```
+
+### Manipulations with a string
+
+```html
+const normalText = 'Manipulation With The Sting';
+const uppercaseText = normalText.toUpperCase();
+const lowercaseText = normalText.toLowerCase();
+const lengthOfText = normalText.length();
+```
+
+### Changing the types
+
+Integer/Float to String:
+```html
+const text = 2 + '';
+const text = (2.0).toSting();
+```
+
+Sting to Integer/Float - to move a text into a number we will use 2 functions:
+```html
+const number = parseInt(2);
+const number = parseFloat(2.0);
+```
