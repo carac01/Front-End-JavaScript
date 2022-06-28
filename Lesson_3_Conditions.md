@@ -142,3 +142,81 @@ or
 // female
 ```
 
+#### Nullish Coalescing Operator
+
+Sometimes we find the Null values. To prevent the problem, in ideal, to give the default value.
+In JS there is the tool that returns the right side if the left is _null_ or _undefined_.
+
+```html
+const variable = 'Alternative' || 'Water'
+// Alternative
+
+const variable = undefined || 'Water'
+// Water
+```
+
+It is recommended to use _??_, the alternative of _||_, which returns in some conditions with
+_false_, _''_ or _0_:
+
+```html
+0 || 'Alternative' // Alternative
+'' || 'Alternative' // Alternative
+false || 'Alternative' // Alternative
+undefined || 'Alternative' // Alternative
+null || 'Alternative' // Alternative
+```
+
+While it is being used _??_:
+
+```html
+0 ?? 'Alternative' // 0
+'' ?? 'Alternative' // ""
+false ?? 'Alternative' // false
+undefined ?? 'Alternative' // 'Alternative'
+null ?? 'Alternative' // 'Alternative'
+```
+Without doubts, it is more reliable.
+
+#### Optional chaining operator
+
+Optional chaining operator defines the _undefined_ value for a property of object which does not exist.
+For example, there is the object:
+
+```html
+const book = {
+    title: "Real-time Django over the Wire",
+    author: "Andros Fenollosa",
+    details: {
+        date: 2022-10-11,
+        language: "English",
+        pages: 210 
+    }
+};
+
+book.title // "Real-time Django over the Wire"
+book.published // undefined
+```
+
+There is no prevention when if we work with the first level of depth. 
+But when we want to get the value with more depth level, and it does not exist, it is returned the 
+error which will stop the execution:
+
+```html
+book.details.language // "English"
+book.details.color // Uncaught TypeError
+```
+
+To resolve this we may catch the error and process or give the _undefined_. 
+To make this we will be able to use the _question mark_ to mark it as optional:
+
+```html
+book.details.pages // 210
+book.details?.timeToDeliver // undefined
+```
+
+If we mix with Coalescing Operator _??_, we may get the default value:
+
+```html
+book.details.language ?? "Spanish" // English
+book.details?.audio ?? "Without audio" // Without audio 
+```
