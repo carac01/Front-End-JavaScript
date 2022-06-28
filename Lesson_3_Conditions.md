@@ -20,21 +20,21 @@ if (condition) ...;
 #### Condition types:
 
 
-Symbol 	   |     Explanation 	   |     Example
-:---:        | :---:                   | :---:
-    > 	   |      more then 	   |       if (1 > 0)
-    < 	   |      less then 	   |        if (1 < 0)
-    && 	   |         and 	       |    if (1 > 0 && 67 > 0)
-    // 	   |         or 	       |    if (1 > 10 // 67 > 0)
-    == 	   |    equal in value 	   |    if ('3' == 3)
-    ===    |equal in value and type|    if ('3' === '3')
-    ! 	   |         not 	       |    if (!(1 > 0))
-    != 	   |     not equal 	       |    if ('9' != 6)
-    !==    |not equal in value and type |  if ('9' !== 9)
-    >=     |	more or equal 	   |   if (10 >= 10)
-    <= 	   |     less or equal 	   |    if (10 <= 20)
-    true   |       True 	       |    if (true)
-    false  |       False 	       |    if (false)
+|Symbol    |     Explanation 	   |     Example             |
+|:-------: |:---------------------:| -----------------------:|
+|    > 	   |      more then 	   |       if (1 > 0)        |
+|    < 	   |      less then 	   |        if (1 < 0)       |
+|    &&    |         and 	       |    if (1 > 0 && 67 > 0) |
+|    //    |         or 	       |    if (1 > 10 // 67 > 0)|
+|    ==    |    equal in value 	   |    if ('3' == 3)        |
+|    ===   |equal in value and type|    if ('3' === '3')     |
+|    ! 	   |         not 	       |    if (!(1 > 0))        |
+|    !=    |     not equal 	       |    if ('9' != 6)        |
+|    !==   |not equal in value and type |  if ('9' !== 9)    |
+|    >=    |	more or equal 	   |   if (10 >= 10)         |
+|    <=    |     less or equal 	   |    if (10 <= 20)        |
+|    true  |       True 	       |    if (true)            |
+|    false |       False 	       |    if (false)           |
 
 
 ```html
