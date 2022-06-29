@@ -8,7 +8,7 @@ Author of the course is [Andros Fenollosa Hurtado](https://soy.andros.dev/). <br
  1. [Introduction](Lesson_1_Introduction.md)
  2. [Variables](Lesson_2_Variables.md)
  3. [Conditions](Lesson_3_Conditions.md)
- 4. Functions
+ 4. [Functions](Lesson_4_Functions.md)
  5. Events
  6. Array
  7. DOM
