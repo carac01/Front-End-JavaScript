@@ -33,3 +33,28 @@ function greeting() {
 greeting();
 // Hello everyone
 ```
+
+#### Arguments
+
+It is possible to personalise the instructions with arguments and variables when it is invoked.
+Let's see how to work with the one argument:
+
+```html
+function sunDiameter(diameter) {
+    console.log(`Eratosthenes made the diameter of the Sun to be about ${diameter} times that of the Earth`);
+}
+
+sunDiameter(27);
+//Eratosthenes made the diameter of the Sun to be about 27 times that of the Earth
+```
+
+And, if we need to increase the number of the arguments, separate them with the comma:
+
+```html
+function leapYear(normalYearDays, leapYearDays) {
+    console.log(`Eratosthenes calculated ${normalYearDays} days in a usual year, fourth year there would be ${leapYearDays} days`);
+}
+
+leapYear(365, 366);
+//Eratosthenes calculated 365 days in a usual year, fourth year there would be 366 days
+```
