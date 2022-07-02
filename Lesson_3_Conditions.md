@@ -94,6 +94,12 @@ Example:
 // Statement is false
 ```
 
+One more example for real life of turtles 🐢🐢:
+```html
+let random_temperature = Math.floor(Math.random() * 50);
+random_temperature < 28 ? 'Male of turtle' : 'Female of turtle';
+```
+
 #### switch
 
 It behaves as the condition which value matched the all the cases:
@@ -121,11 +127,13 @@ Let's watch the example:
 
 ```html
 let genders = [
-    {'chromosome' : 'XY', 'gender': 'male'},
-    {'chromosome' : 'XX', 'gender': 'female'}
+    {'chromosome' : 'XY', 'SRY': true, 'gender': 'male human ♂️'},
+    {'chromosome' : 'XX', 'SRY': false, 'gender': 'female human ♀️'},
+    {'chromosome' : 'ZZ', 'gender': 'male bird ♂️🦆'},
+    {'chromosome' : 'ZW', 'gender': 'female bird ♀️🦆'},
 ];
 
-let random_index = Math.floor(Math.random() * 2);
+let random_index = Math.floor(Math.random() * genders.length);
 
 switch(genders[random_index].chromosome) {
     case genders[random_index].chromosome:
@@ -136,11 +144,15 @@ switch(genders[random_index].chromosome) {
         break;
 }
 
-random result:
-// male
-or
-// female
 ```
+
+Some information about reproductive system mechanism - 
+there are the links to some articles which helped to write the code above:
+https://medlineplus.gov/genetics/gene/sry/
+https://www.ncbi.nlm.nih.gov/books/NBK22266/#A273
+https://rarediseases.org/rare-diseases/swyer-syndrome/
+https://www.ncbi.nlm.nih.gov/books/NBK9989/
+https://youtu.be/kMWxuF9YW38
 
 #### Nullish Coalescing Operator
 

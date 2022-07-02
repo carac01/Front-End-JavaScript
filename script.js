@@ -1,6 +1,3 @@
-function sunDiameter(diameter) {
-    console.log(`Eratosthenes made the diameter of the Sun to be about ${diameter} times that of the Earth`);
-}
-
-sunDiameter(27);
-//Eratosthenes made the diameter of the Sun to be about 27 times that of the Earth
+let random_temperature = Math.floor(Math.random() * 50);
+console.log(random_temperature);
+random_temperature < 28 ? console.log('Male of turtle') : console.log('Female of turtle');
